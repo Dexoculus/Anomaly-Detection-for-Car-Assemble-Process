@@ -1,0 +1,20 @@
+# Ignore all __pycache__
+**/__pycache__/
+
+# Ignore data files
+data/
+
+# Ignore document files
+docs/
+ 
+# Ignore Model Weight Checkpoints
+checkpoints/
+
+# Ignore Loss log files
+losses/
+
+# Ignore Learing Curve plot figure image
+plots/
+
+# Ignore all .zip format files
+*.zip
