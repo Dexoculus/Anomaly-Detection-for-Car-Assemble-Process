@@ -47,7 +47,7 @@ The project utilized two types of data:
     - AutoEncoder (Linear)
     - RNNAE (AutoEncoder based on LSTM)
     - CNN1DAE (AutoEncoder based on Conv1D)
-    
+
 
 - **Sticker Data**:
     To be developed...
@@ -78,4 +78,35 @@ The project utilized two types of data:
 - Anomaly Detection:
   - Demonstrated the potential of Autoencoder-based approaches for detecting anomalies.
 
+## Installation & Usage
 
+1. **Clone the repository:**
+```bash
+git clone https://github.com/Dexoculus/Anomaly-Detection-for-Car-Assemble-Process.git
+cd Anomaly-Detection-for-Car-Assemble-Process
+```
+2. **Install required dependencies:**
+```bash
+pip install -r requirements.txt
+```
+Make sure PyTorch and other dependencies (such as torchvision, yaml, matplotlib) are installed. Adjust the requirements as needed.
+
+Also, My code uses a experiment_manager from:
+https://github.com/Dexoculus/PyTorch-Experiment-Manager
+
+3. **Run the main code:**
+- main.py (for Classification task)
+```bash
+python main.py --config ./configs/classification_config.yaml
+```
+
+- anomal_main.py (for Anomaly Detection task)
+```bash
+python anomal_main.py --config ./configs/anomal_config.yaml
+```
+
+4. Check the Result.
+- Checkpoints: Stored in `./checkpoints/` by default.
+- Loss plots: Stored in the path you write in config if visualization is enabled.
+- results files: Stored in the path you write in config if exporting is enabled.
+- Logs: Training and validation logs displayed in the terminal.
