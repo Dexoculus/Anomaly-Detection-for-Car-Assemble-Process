@@ -1,5 +1,5 @@
 import argparse
-from experiment_manager import ExperimentManager
+from DeepExperimentManager import ExperimentManager
 from Module import AnomalTester
 
 def main():
