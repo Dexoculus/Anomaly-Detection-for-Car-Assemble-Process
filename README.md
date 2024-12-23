@@ -8,6 +8,10 @@ The project focuses on classifying robot arm data into normal and defective cate
 ## Dataset Description
 The project utilized two types of data:
 
+| **OK** | **NG** |
+|--------|--------|
+|![OK][1]|![NG][2]|
+
 1. **Action Data**:
    - Time-series data obtained from end-effector sensors on the robot arm, measuring forces (`Fx, Fy, Fz`) and torques (`Tx, Ty, Tz`) in each direction at every timestep.
    - Data labels:
@@ -110,3 +114,6 @@ python anomal_main.py --config ./configs/anomal_config.yaml
 - Loss plots: Stored in the path you write in config if visualization is enabled.
 - results files: Stored in the path you write in config if exporting is enabled.
 - Logs: Training and validation logs displayed in the terminal.
+
+[1]: ./figure/ok.png
+[2]: ./figure/ng.png
